@@ -1,0 +1,6 @@
+numpy==2.2.2
+PyYAML==6.0.2
+PyYAML==6.0.2
+torch==2.5.1.post303
+tqdm==4.66.5
+uproot==5.5.1

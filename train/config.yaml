@@ -1,0 +1,24 @@
+hyper_params:
+  dim_output: 3
+  dim_ffnn: 1024
+  num_blocks: 2
+  num_heads: 12
+  depth: 32
+  dropout_rate: 0.1
+  batch_size: 128
+  learning_rate: 0.0003
+
+
+branches:
+  jet_branches: ['jet_pt', 'jet_eta', 'jet_phi', 'jet_mass', 'jet_num_chad', 'jet_num_nhad', 'jet_num_electron', 'jet_num_muon', 'jet_num_photon', 'jet_major_axis', 'jet_minor_axis', 'jet_ptd', 'jet_b_tag', 'jet_charge']
+  lep_branches: ['lep_pt', 'lep_eta', 'lep_phi', 'lep_mass', 'lep_charge', 'lep_isMuon']
+  met_branches: ['met', 'met_phi']
+  target_branch: 'jet_parton_match_detail'
+  reco_branches: ['weight']
+
+
+loader_args:
+  pin_memory: True
+  shuffle: True
+
+n_epoch: 300
